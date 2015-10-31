@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20151030220908) do
     t.integer  "owner_id",           limit: 4
     t.string   "owner_type",         limit: 255
     t.string   "meetingid",          limit: 255
+    t.string   "attendee_key",       limit: 255
     t.string   "name",               limit: 255
     t.string   "attendee_password",  limit: 255
     t.string   "moderator_password", limit: 255
