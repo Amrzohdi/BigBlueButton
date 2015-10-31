@@ -54,6 +54,8 @@ ActiveRecord::Schema.define(version: 20151030220908) do
     t.string   "owner_type",         limit: 255
     t.string   "meetingid",          limit: 255
     t.string   "attendee_key",       limit: 255
+    t.string   "moderator_key",      limit: 255
+    t.boolean  "private",                        default: false
     t.string   "name",               limit: 255
     t.string   "attendee_password",  limit: 255
     t.string   "moderator_password", limit: 255
@@ -62,7 +64,6 @@ ActiveRecord::Schema.define(version: 20151030220908) do
     t.string   "voice_bridge",       limit: 255
     t.string   "dial_number",        limit: 255
     t.integer  "max_participants",   limit: 4
-    t.boolean  "private",                        default: false
     t.boolean  "external",                       default: false
     t.string   "param",              limit: 255
     t.boolean  "record_meeting",                 default: false
