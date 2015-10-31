@@ -74,6 +74,13 @@ ActiveRecord::Schema.define(version: 20151030220908) do
   add_index "bigbluebutton_rooms", ["server_id"], name: "index_bigbluebutton_rooms_on_server_id", using: :btree
   add_index "bigbluebutton_rooms", ["voice_bridge"], name: "index_bigbluebutton_rooms_on_voice_bridge", unique: true, using: :btree
 
+  create_table "bigbluebutton_server_configs", force: :cascade do |t|
+    t.integer  "server_id",         limit: 4
+    t.text     "available_layouts", limit: 65535
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "bigbluebutton_servers", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.string   "url",        limit: 255
