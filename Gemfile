@@ -26,7 +26,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'resque-scheduler'
 gem 'responders', '~> 2.0'
 # gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
-gem "bigbluebutton_rails"
+
+gem 'bigbluebutton-api-ruby', :git => 'https://github.com/mconf/bigbluebutton-api-ruby.git', :branch => 'master'
+gem 'bigbluebutton_rails', :git => 'https://github.com/mconf/bigbluebutton_rails.git', :branch => 'master'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
