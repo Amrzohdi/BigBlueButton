@@ -15,6 +15,7 @@ class CreateBigbluebuttonRails < ActiveRecord::Migration
       t.integer :owner_id
       t.string :owner_type
       t.string :meetingid
+      t.string :attendee_key
       t.string :name
       t.string :attendee_password
       t.string :moderator_password
