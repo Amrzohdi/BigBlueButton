@@ -26,7 +26,7 @@ class CreateBigbluebuttonRails < ActiveRecord::Migration
       t.boolean :private, :default => false
       t.boolean :external, :default => false
       t.string :param
-      t.boolean :record, :default => false
+      t.boolean :record_meeting, :default => false
       t.integer :duration, :default => 0
       t.timestamps
     end

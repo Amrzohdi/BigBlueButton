@@ -5,7 +5,10 @@
 # 3 or later. See the LICENSE file.
 
 class CustomBigbluebuttonRoomsController < Bigbluebutton::RoomsController
-
+  def new
+    @room = BigbluebuttonRoom.new
+    respond_with(@room)
+  end
   def determine_layout
   end
 

@@ -14,7 +14,6 @@ class CustomBigbluebuttonRecordingsController < Bigbluebutton::RecordingsControl
 
   # Checks the URL and sets the parameters as temporary parameters in the playback's URL.
   def set_parameters
-    end
   end
 
   # Override the method used in Bigbluebutton::RecordingsController to get the parameters the
