@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 20151030220908) do
     t.boolean  "private",                        default: false
     t.boolean  "external",                       default: false
     t.string   "param",              limit: 255
-    t.boolean  "record",                         default: false
+    t.boolean  "record_meeting",                 default: false
     t.integer  "duration",           limit: 4,   default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
