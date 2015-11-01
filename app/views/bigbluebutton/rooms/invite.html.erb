@@ -57,9 +57,9 @@ $(document).ready(function(){
   <div class="field">
     <label for="user_password">Password:</label><br />
     <% if @user_role == :attendee %>
-      <%= password_field_tag "user[password]", @room.attendee_password, :readonly => true %>
+      <%= password_field_tag "user[password]", @room.attendee_key, :readonly => true %>
     <% elsif @user_role == :moderator %>
-      <%= password_field_tag "user[password]", @room.moderator_password, :readonly => true %>
+      <%= password_field_tag "user[password]", @room.moderator_key, :readonly => true %>
     <% else %>
       <%= password_field_tag "user[password]", "" %>
     <% end %>
